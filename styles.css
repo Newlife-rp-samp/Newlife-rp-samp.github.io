@@ -1,0 +1,92 @@
+body {
+  font-family: Georgia, serif;
+  background-image: url('https://i.imgur.com/vOacBQG.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+nav {
+  position: relative;
+  transition: background-color 0.4s cubic-bezier(0.4,0,0.2,1), color 0.4s cubic-bezier(0.4,0,0.2,1);
+  border-radius: 0.375rem; /* rounded-md */
+  padding: 0.25rem 0.75rem; /* px-3 py-1 */
+}
+
+nav:hover,
+nav:focus {
+  background-color: rgba(34,211,238,0.18); /* cyan-400 with transparency */
+  color: #22d3ee; /* cyan-400 */
+}
+
+nav:active {
+  background-color: #22d3ee; /* solid cyan-400 */
+  color: #000;
+  transition: background-color 0.1s;
+}
+.Keyfeatures {
+    color: #22d3ee;
+    font-size: medium;
+    font-family: Jaro;
+}
+/* ...existing code... */
+.slider-container {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider-images {
+  width: 100%;
+  max-width: 400px;
+  min-height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider-img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 0.5rem;
+  display: none;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.4);
+}
+.slider-btn {
+  background: rgba(34,211,238,0.7);
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  transition: background 0.3s;
+}
+.slider-btn:hover {
+  background: #22d3ee;
+}
+.slider-btn.left-2 { left: 0; }
+.slider-btn.right-2 { right: 0; }
+
+.nav-link {
+  transition: background-color 0.4s cubic-bezier(0.4,0,0.2,1), color 0.4s cubic-bezier(0.4,0,0.2,1);
+  border-radius: 0.375rem;
+  padding: 0.25rem 0.75rem;
+  display: inline-block;
+}
+.nav-link:hover,
+.nav-link:focus {
+  background-color: rgba(34,211,238,0.18);
+  color: #22d3ee;
+}
+.nav-link:active {
+  background-color: #22d3ee;
+  color: #000;
+  transition: background-color 0.1s;
+}
