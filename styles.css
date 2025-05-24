@@ -77,7 +77,7 @@ nav:active {
 .nav-link {
   transition: background-color 0.4s cubic-bezier(0.4,0,0.2,1), color 0.4s cubic-bezier(0.4,0,0.2,1);
   border-radius: 0.375rem;
-  padding: 0.25rem 0.75rem;
+  padding: 0.10rem 0.55rem;
   display: inline-block;
 }
 .nav-link:hover,
